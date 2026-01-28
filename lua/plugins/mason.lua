@@ -23,6 +23,7 @@ return {
         "ruff",
         "prettier",
         "lua-language-server",
+        "sql-formatter",
       },
     },
   },

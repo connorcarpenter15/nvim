@@ -505,3 +505,16 @@ end
 --   vim.cmd([[silent! %s/\r//g]])
 --   vim.notify("Cleaned all newline characters!", vim.log.levels.INFO, { title = "File Saved" })
 -- end, { remap = false, desc = "Clean ^M", silent = true })
+
+-- --------------------------------------- SQL AND DADBOD --------------------------------
+-- Open the DBUI drawer
+vim.keymap.set("n", "<leader>Do", "<cmd>DBUIToggle<CR>", { desc = "Toggle DBUI" })
+
+-- Attach the current buffer to a connection
+vim.keymap.set("n", "<leader>Da", "<cmd>DBUIFindBuffer<CR>", { desc = "Attach DB to Buffer" })
+
+-- Rename the current buffer's output filename (optional but useful)
+vim.keymap.set("n", "<leader>Dr", "<cmd>DBUIRenameBuffer<CR>", { desc = "Rename DB Buffer" })
+
+-- Execute the last query again (useful for repeated testing)
+vim.keymap.set("n", "<leader>Dl", "<cmd>DBUILastQueryInfo<CR>", { desc = "Last Query Info" })

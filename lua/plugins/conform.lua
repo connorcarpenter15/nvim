@@ -19,6 +19,7 @@ return {
       markdown = { "prettier" },
       graphql = { "prettier" },
       lua = { "stylua" },
+      sql = { "sql_formatter" },
     },
   },
 }
