@@ -20,6 +20,8 @@ return {
       graphql = { "prettier" },
       lua = { "stylua" },
       sql = { "sql_formatter" },
+      sml = { "smlfmt" },
+      rust = { "rustfmt" },
     },
   },
 }

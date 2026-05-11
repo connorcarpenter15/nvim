@@ -11,7 +11,7 @@ return {
   opts = {
     strategies = {
       chat = {
-        adapter = "copilot",
+        adapter = "gemini_cli",
         tools = {
           opts = {
             auto_submit_errors = true,
@@ -37,8 +37,19 @@ return {
           },
         },
       },
-      inline = { adapter = "copilot" },
-      cmd = { adapter = "copilot" },
+      inline = { adapter = "gemini_cli" },
+      cmd = { adapter = "gemini_cli" },
+      adapters = {
+        acp = {
+          gemini_cli = function()
+            return require("codecompanion.adapters").extend("gemini_cli", {
+              defaults = {
+                auth_method = "oauth-personal",
+              },
+            })
+          end,
+        },
+      },
     },
     display = {
       chat = {
@@ -61,7 +72,7 @@ return {
     {
       "<leader>ac",
       function()
-        require("codecompanion").chat()
+        require("codecompanion").toggle()
       end,
       desc = "CodeCompanion Chat",
       mode = "n",
