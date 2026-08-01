@@ -53,7 +53,7 @@ Plugin management is handled by
 - **Indent Guides**: [snacks.nvim](https://github.com/folke/snacks.nvim) indent and scope features
 - **Terminal**: Integrated floating and split terminals
 - **Session Management**: [persistence.nvim](https://github.com/folke/persistence.nvim)
-- **AI/Code Assistant**: [codecompanion.nvim](https://github.com/olimorris/codecompanion.nvim) with Copilot backend
+- **AI/Code Assistant**: [codecompanion.nvim](https://github.com/olimorris/codecompanion.nvim) with Gemini CLI backend
 - **Other**: Treesitter, mini.move, mini.surround, snacks dashboard, and more
 
 ## Custom Keymaps

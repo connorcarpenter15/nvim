@@ -400,7 +400,6 @@ local hlgroups = {
   BlinkCmpKindClass = { link = "Type" },
   BlinkCmpKindConstant = { link = "Constant" },
   BlinkCmpKindConstructor = { link = "@constructor" },
-  BlinkCmpKindCopilot = { link = "String" },
   BlinkCmpKindDefault = { fg = katanaGray },
   BlinkCmpKindEnum = { link = "Type" },
   BlinkCmpKindEnumMember = { link = "Constant" },
